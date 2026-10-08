@@ -1,0 +1,150 @@
+/* Color Palette
+# - navy: #1E2A44 (header, body, and footer background, text on light)
+# - off-white: #F4F6F8 (work experience background, text on dark)
+# - steel blue: #DDE6EF (education background)
+# - sky blue: #8FB8DE (accent for links)
+*/
+
+/* Global styles 
+------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* (how I styled the header profile image) in hw6
+header img {
+Portrait image in the header
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%; turns the square into a circle
+}
+*/
+
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px;
+  overflow: hidden;
+}
+
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
+
+.column-narrow {
+  width: 30%;
+  float: left;
+  padding-right: 3%;
+  min-height: 175px;
+  clear: left; /* starts each row below the previous floats */
+}
+
+.column-wide {
+  width: 70%;
+  float: left;
+  min-height: 225px;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 27%;
+  padding-right: 0;
+  margin-right: 3%; /* the gap moves from padding to margin, so the image stays round */
+  aspect-ratio: 1 / 1; /* forces a square box, so 50% rounding is a true circle */
+  object-fit: cover; /* crops the photo to fill the square instead of stretching it */
+  object-position: center; /* keeps the crop centered on the middle of the photo */
+}
+
+body {
+  margin: 0; /* removes the default white border around the page */
+  line-height: 1.5;
+  background: #1E2A44; /* matches the footer so any extra space blends in */
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* Header & Footer
+------------------------------------*/
+header {
+  background: #1E2A44;
+  color: #F4F6F8;
+}
+
+footer {
+  text-align: center;
+  background: #1E2A44;
+  color: #F4F6F8;
+}
+
+/*
+header, footer, .work-experience, .education {
+  padding: 3rem 2rem;
+}
+from previous hw (not needed with content-wrap)
+*/ 
+
+/* headers */
+h1 {
+  font-size: 3rem;
+  font-weight: 700; /* bold name */
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header h2 {
+  font-size: 1.25rem; /* smaller than other h2s, since it's a tagline */
+  font-weight: 400; /* regular weight so the name stands out more */
+  margin: 0;
+}
+/* end of headers*/
+
+
+/* Remove the extra default top margin so the padding controls the spacing (from hw6)
+section h2 {
+  margin-top: 0;
+}
+*/
+
+/* Remove the extra default top margin so the padding controls the spacing (from hw6)
+footer h2 {
+  margin-top: 0;
+}
+*/
+
+footer a {
+  color: #8FB8DE; /* Sky blue for links */
+}
+
+/* Work Experience
+------------------------------------*/
+.work-experience {
+  background: #F4F6F8;
+  color: #1E2A44;
+}
+
+/* Education
+------------------------------------*/
+.education {
+  background: #DDE6EF;
+  color: #1E2A44;
+}
